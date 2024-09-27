@@ -3,8 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروع المختبرات</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>عناوين الفروع</title>
+    <!-- كتابة الـCSS داخل وسم <style> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #0056b3;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        section.branch {
+            margin-bottom: 40px;
+        }
+
+        .branch h3 {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: right;
+        }
+
+        .location {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .location:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .location h4 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .location p {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .location p span {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        p {
+            text-align: right;
+            direction: rtl;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            .location h4 {
+                font-size: 1em;
+            }
+
+            .location p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">

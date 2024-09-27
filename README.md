@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عناوين الفروع</title>
-    <!-- كتابة الـCSS داخل وسم <style> -->
     <style>
         * {
             margin: 0;
@@ -44,6 +43,15 @@
 
         section.branch {
             margin-bottom: 40px;
+            padding: 15px;
+            border: 2px solid #0056b3;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        section.branch:hover {
+            background-color: #e0f7fa; /* لون مميز عند المرور فوق القسم */
         }
 
         .branch h3 {
@@ -55,12 +63,12 @@
         }
 
         .location {
-            background-color: #f9f9f9;
+            background-color: #fff;
             border: 1px solid #ddd;
             padding: 15px;
             margin: 10px 0;
             border-radius: 8px;
-            transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
 
         .location:hover {

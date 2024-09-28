@@ -4,30 +4,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فروع المعامل</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: right;
-        }
-        .branch {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        p {
-            margin: 5px 0;
-        }
-        .location {
-            font-weight: bold;
-        }
-        .details {
-            margin-left: 15px;
-        }
+     /* إعدادات أساسية */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+/* الحاوية الأساسية */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* العناوين الرئيسية */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* العناوين الثانوية */
+h3 {
+    margin-top: 30px;
+    color: #1a73e8;
+    text-align: center;
+}
+
+/* إعدادات الفروع (البوكسات) */
+.branch {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* الحد الأقصى لعرض البوكس */
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+h4 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* للتأكد من أن الكتابة داخل البوكس تكون مرتبة */
+.branch p {
+    margin-right: 10px;
+}
+
+/* إعدادات متجاوبة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .branch {
+        width: 100%; /* تأكد من أن العرض يناسب الهواتف */
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
